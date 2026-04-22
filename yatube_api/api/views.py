@@ -53,4 +53,3 @@ class CommentViewSet(viewsets.ModelViewSet):
         if instance.author != self.request.user:
             raise PermissionDenied('Удаление чужого комментария запрещено!')
         instance.delete()
-        
